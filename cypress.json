@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "fixturesFolder": "fixtures",
+  "integrationFolder": "specs",
+  "screenshotsFolder": "screenshots",
+  "pluginsFile": "plugins/index.js",
+  "defaultCommandTimeout": 10000,
+  "requestTimeout": 10000,
+  "video": false,
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/report-[hash].xml",
+    "toConsole": false
+  }
+}
