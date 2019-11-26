@@ -13,7 +13,7 @@ pipeline {
         dir("e2e") {
           script {
             ansiColor('xterm') {  
-                sh 'mkdir results'
+                sh 'rm -rf results && mkdir results'
                 sh 'docker-compose up --build --abort-on-container-exit'
             }
           }

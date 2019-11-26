@@ -6,7 +6,6 @@ services:
     build:
       context: .
       dockerfile: ./dockerfiles/cypress.dockerfile
-    container_name: cypress
     depends_on:
       - nginx
     volumes: 
