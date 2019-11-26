@@ -1,5 +1,3 @@
-@Library('pipeline-slack-notification')_
-
 pipeline {
   agent any
 
@@ -26,8 +24,6 @@ pipeline {
               junit 'results/*.xml'
               sh 'docker-compose down'
               sh 'docker system prune -af'
-              slackNotifier()
-              sh 'rm -rf results'
           }
       }
     }
